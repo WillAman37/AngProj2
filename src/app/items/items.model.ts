@@ -1,13 +1,13 @@
-export class Item{
+export class Parts {
     public name: string;
     public description: string;
-    public imagePath: string;
-    public price: string;
+    public img_: string;
+    price: any;
 
-    constructor(name: string, desc: string, imagePath: string, price: string){
+    constructor(name: string, desc: string, img_: string, price: string) {
         this.name = name;
         this.description = desc;
-        this.imagePath = imagePath;
+        this.img_ = img_;
         this.price = price;
     }
 }

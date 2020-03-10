@@ -1,24 +1,21 @@
-<div class="columns is-centered">
-    <a class="list-group-item clearfix"
-    *ngfor="let item of items"></a>
+<div class="columns is-centered" *ngFor="let part of Part_">
     <div class="box">
         <article class="media">
             <div class="media-left">
                 <figure class="image is-64x64">
-                    <img src="https://www.lenovo.com/medias/lenovo-data-center-rack-server-thinksystem-sr570-subseries-hero.png?context=bWFzdGVyfHJvb3R8NDc3NjJ8aW1hZ2UvcG5nfGg0Ni9oNWYvOTU4NjA5MTg1MTgwNi5wbmd8MmRiOWNmZDBmZGNiMzM1OTdlMTI4NWU5N2I4N2Y4ZDQxNTk4OTg5ZTVhMmYwZmE4NDdkZmY2NGYwNzQxYzllNw"
-                        alt="Image">
+                    <img src={{part.img_}} alt="Image">
                 </figure>
             </div>
             <div class="media-content">
                 <div class="content">
                     <p>
-                        <strong>{{item.name}}</strong>
+
+                        <strong> {{ part.name }} </strong>
                         <br>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
-                        fringilla egestas. Nullam condimentum luctus turpis.
+                        {{part.description}}
                     </p>
                     <br>
-                    <strong>$3,000 </strong>
+                    <strong>{{part.price}} </strong>
                     <button class="button is-warning">
                         Add To Cart
                     </button>
@@ -26,4 +23,5 @@
             </div>
         </article>
     </div>
+    <br>
 </div>

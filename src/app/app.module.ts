@@ -11,6 +11,7 @@ import { ItemsComponent } from './items/items.component';
 import { ItemsListComponent } from './items/items-list/items-list.component';
 import { ItemsSingleComponent } from './items/items-list/items-single/items-single.component';
 import { StoreEditComponent } from './store/store-edit/store-edit.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { StoreEditComponent } from './store/store-edit/store-edit.component';
     ItemsComponent,
     ItemsListComponent,
     ItemsSingleComponent,
-    StoreEditComponent
+    StoreEditComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
